@@ -1,13 +1,10 @@
 <?php
-$arr = array('a','b','c','d');
-echo count($arr);
 
-for ($i = 0; $i <count($arr); $i++) {
-     echo $arr[$i] . '<br />';
-}
+require('Person.php');
 
+$axle = new Person();
 
-$explode = "1,2,3,4,5,6,7,8";
+$axle->name= "AXle";
+$axle->age= 24;
 
-print_r (explode(",",$explode));
-?>
+$axle->sayAge();
