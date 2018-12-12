@@ -6,21 +6,17 @@ class check{
 
 	public function checkCapital(){
 
-		if(ctype_upper($this->checker)){
+		$var = ctype_upper($this->checker);
 
-			return "TRUE";
+		return $var ? "True" : "False";
 
-		} else {
-
-			return "FAlSE";
-		}
 	}
 }
 
 
 $var = new check();
 
-$var->checker = "abcd";
+$var->checker = "ABC";
 
 
 echo $var->checkCapital();
